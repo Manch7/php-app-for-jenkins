@@ -1,0 +1,99 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'express-generator' ]
+2 info using npm@6.14.4
+3 info using node@v10.19.0
+4 verbose npm-session 0626afc257717807
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 http fetch GET 200 https://registry.npmjs.org/express-generator 1061ms
+8 http fetch GET 200 https://registry.npmjs.org/express-generator/-/express-generator-4.16.1.tgz 96ms
+9 silly pacote tag manifest for express-generator@latest fetched in 1186ms
+10 timing stage:loadCurrentTree Completed in 1208ms
+11 silly install loadIdealTree
+12 silly install cloneCurrentTreeToIdealTree
+13 timing stage:loadIdealTree:cloneCurrentTree Completed in 0ms
+14 silly install loadShrinkwrap
+15 timing stage:loadIdealTree:loadShrinkwrap Completed in 1ms
+16 silly install loadAllDepsIntoIdealTree
+17 silly resolveWithNewModule express-generator@4.16.1 checking installable status
+18 http fetch GET 200 https://registry.npmjs.org/ejs 139ms
+19 http fetch GET 200 https://registry.npmjs.org/ejs/-/ejs-2.6.1.tgz 75ms
+20 http fetch GET 200 https://registry.npmjs.org/sorted-object 217ms
+21 silly pacote version manifest for ejs@2.6.1 fetched in 235ms
+22 silly resolveWithNewModule ejs@2.6.1 checking installable status
+23 http fetch GET 304 https://registry.npmjs.org/mkdirp 234ms (from cache)
+24 http fetch GET 304 https://registry.npmjs.org/commander 243ms (from cache)
+25 http fetch GET 304 https://registry.npmjs.org/minimatch 250ms (from cache)
+26 http fetch GET 200 https://registry.npmjs.org/minimatch/-/minimatch-3.0.4.tgz 25ms (from cache)
+27 silly pacote version manifest for minimatch@3.0.4 fetched in 280ms
+28 silly resolveWithNewModule minimatch@3.0.4 checking installable status
+29 http fetch GET 200 https://registry.npmjs.org/sorted-object/-/sorted-object-2.0.1.tgz 65ms
+30 silly pacote version manifest for sorted-object@2.0.1 fetched in 291ms
+31 silly resolveWithNewModule sorted-object@2.0.1 checking installable status
+32 http fetch GET 200 https://registry.npmjs.org/commander/-/commander-2.15.1.tgz 79ms
+33 http fetch GET 200 https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz 80ms
+34 silly pacote version manifest for commander@2.15.1 fetched in 330ms
+35 silly resolveWithNewModule commander@2.15.1 checking installable status
+36 silly pacote version manifest for mkdirp@0.5.1 fetched in 325ms
+37 warn deprecated mkdirp@0.5.1: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+38 silly resolveWithNewModule mkdirp@0.5.1 checking installable status
+39 http fetch GET 304 https://registry.npmjs.org/brace-expansion 42ms (from cache)
+40 silly pacote range manifest for brace-expansion@^1.1.7 fetched in 51ms
+41 silly resolveWithNewModule brace-expansion@1.1.11 checking installable status
+42 http fetch GET 304 https://registry.npmjs.org/concat-map 123ms (from cache)
+43 http fetch GET 304 https://registry.npmjs.org/balanced-match 129ms (from cache)
+44 silly pacote version manifest for concat-map@0.0.1 fetched in 131ms
+45 silly resolveWithNewModule concat-map@0.0.1 checking installable status
+46 silly pacote range manifest for balanced-match@^1.0.0 fetched in 136ms
+47 silly resolveWithNewModule balanced-match@1.0.2 checking installable status
+48 http fetch GET 304 https://registry.npmjs.org/minimist 120ms (from cache)
+49 http fetch GET 200 https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz 48ms
+50 silly pacote version manifest for minimist@0.0.8 fetched in 175ms
+51 silly resolveWithNewModule minimist@0.0.8 checking installable status
+52 timing stage:loadIdealTree:loadAllDepsIntoIdealTree Completed in 715ms
+53 timing stage:loadIdealTree Completed in 719ms
+54 silly currentTree lib
+55 silly idealTree lib
+55 silly idealTree └─┬ express-generator@4.16.1
+55 silly idealTree   ├── balanced-match@1.0.2
+55 silly idealTree   ├── brace-expansion@1.1.11
+55 silly idealTree   ├── commander@2.15.1
+55 silly idealTree   ├── concat-map@0.0.1
+55 silly idealTree   ├── ejs@2.6.1
+55 silly idealTree   ├── minimatch@3.0.4
+55 silly idealTree   ├── minimist@0.0.8
+55 silly idealTree   ├── mkdirp@0.5.1
+55 silly idealTree   └── sorted-object@2.0.1
+56 silly install generateActionsToTake
+57 warn checkPermissions Missing write access to /usr/local/lib
+58 timing stage:rollbackFailedOptional Completed in 0ms
+59 timing stage:runTopLevelLifecycles Completed in 1934ms
+60 verbose stack Error: EACCES: permission denied, access '/usr/local/lib'
+61 verbose cwd /home/manch/aca-devops-training/applications/backend-express-psql
+62 verbose Linux 5.15.0-73-generic
+63 verbose argv "/usr/bin/node" "/usr/bin/npm" "install" "-g" "express-generator"
+64 verbose node v10.19.0
+65 verbose npm  v6.14.4
+66 error code EACCES
+67 error syscall access
+68 error path /usr/local/lib
+69 error errno -13
+70 error Error: EACCES: permission denied, access '/usr/local/lib'
+70 error  { [Error: EACCES: permission denied, access '/usr/local/lib']
+70 error   stack:
+70 error    'Error: EACCES: permission denied, access \'/usr/local/lib\'',
+70 error   errno: -13,
+70 error   code: 'EACCES',
+70 error   syscall: 'access',
+70 error   path: '/usr/local/lib' }
+71 error The operation was rejected by your operating system.
+71 error It is likely you do not have the permissions to access this file as the current user
+71 error
+71 error If you believe this might be a permissions issue, please double-check the
+71 error permissions of the file and its containing directories, or try running
+71 error the command again as root/Administrator.
+72 verbose exit [ -13, true ]

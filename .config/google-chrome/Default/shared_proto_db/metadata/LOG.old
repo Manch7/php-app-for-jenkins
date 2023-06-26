@@ -1,0 +1,14 @@
+2023/06/26-13:22:45.305 cbd Recovering log #25
+2023/06/26-13:22:45.306 cbd Level-0 table #27: started
+2023/06/26-13:22:45.373 cbd Level-0 table #27: 124 bytes OK
+2023/06/26-13:22:45.410 cbd Delete type=3 #23
+2023/06/26-13:22:45.410 cbd Delete type=0 #25
+2023/06/26-13:22:45.411 cbd Compacting 4@0 + 1@1 files
+2023/06/26-13:22:45.496 cbd Generated table #29@0: 15 keys, 261 bytes
+2023/06/26-13:22:45.496 cbd Compacted 4@0 + 1@1 files => 261 bytes
+2023/06/26-13:22:45.512 cbd compacted to: files[ 0 1 0 0 0 0 0 ]
+2023/06/26-13:22:45.512 cbd Delete type=2 #21
+2023/06/26-13:22:45.513 cbd Delete type=2 #27
+2023/06/26-13:22:45.513 cbd Delete type=2 #18
+2023/06/26-13:22:45.513 cbd Delete type=2 #24
+2023/06/26-13:22:45.513 cbd Delete type=2 #16
